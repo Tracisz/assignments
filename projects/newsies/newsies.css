@@ -1,0 +1,33 @@
+html{ 
+    background-image: url(https://previews.123rf.com/images/korolyok/korolyok1805/korolyok180500137/102201780-vintage-grunge-newspaper-paper-texture-background-blurred-old-newspaper-background-a-blur-unreadable.jpg);
+    background-position: left;
+}
+.head { 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    border-bottom-style: solid; 
+    margin-bottom: 5px;
+
+} 
+img{ 
+    float:left; 
+    width: 300px; 
+    height: 200px; 
+    margin-right:10px;
+}
+.date{ 
+    text-align:center; 
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px; 
+    margin-bottom: 25px;
+}
+.subtitle{ 
+    color: black;
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+
+}
+p{ 
+    margin-left: 25px; 
+    margin-right: 25px; 
+}

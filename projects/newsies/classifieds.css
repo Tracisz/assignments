@@ -1,0 +1,17 @@
+html{ 
+    background-image: url(https://previews.123rf.com/images/korolyok/korolyok1805/korolyok180500137/102201780-vintage-grunge-newspaper-paper-texture-background-blurred-old-newspaper-background-a-blur-unreadable.jpg);
+    background-position: left;
+}
+.title{ 
+    text-align: center; 
+    border-bottom-style: double; 
+    font-size: 100px;
+    margin-top: 0px;
+}
+.adds{ 
+    display:inline-block; 
+    max-width: 33%;
+    border-bottom-style:solid; 
+    margin-bottom:15px;
+    text-align: center;
+}

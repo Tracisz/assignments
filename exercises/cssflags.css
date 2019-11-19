@@ -1,0 +1,204 @@
+* {
+    margin:0;
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+
+/* french flag */
+
+/* .box1 { 
+    display: inline-block;
+    background-color:blue; 
+    width: 33%;
+    height:100vh;
+}
+
+.box2{ 
+    display:inline-block; 
+    position: relative;
+    width: 33%;
+    height: 100vh;
+
+}
+.box3{ 
+    background-color: red;
+    display:inline-block; 
+    position: relative;
+    width: 33%;
+    height: 100vh;
+
+} */
+
+/* German flag */
+
+/* .box1{ 
+    background-color: black; 
+    width: 99vw; 
+    height: 33vh
+}
+
+.box2 { 
+    background-color:red; 
+    width: 99vw; 
+    height:33vh; 
+}
+.box3{ 
+    background-color:yellow; 
+    width: 99vw; 
+    height:31vh; 
+} */
+
+/* madagascar flag */
+
+/* .box1{ 
+    display: inline-block;
+    position:relative;
+    height:99vh; 
+    width: 25%;
+}
+/* .container{ 
+    position: relative;
+    display:inline-block; 
+    width: 70vw; 
+    
+} */
+/* .box2{ 
+    margin:0;
+    top:0px; 
+    left:25%;
+    display:inline-block; 
+    position: relative;
+    width:50%; 
+    height: 49vh ;
+    background-color:red;
+}
+
+
+.box3{ 
+    margin:0;
+    width:50%; 
+    top:49vh;
+    left:25%;
+    display: inline-block;
+    height: 49vh; 
+    background-color:green;
+    position: relative;
+} */ 
+
+/* swiss flag */
+
+/* body { 
+    background-color: red; 
+
+}
+
+.box1 { 
+    position: absolute;
+    top:30vh; 
+    left:46vw; 
+    background-color:white; 
+    height:400px; 
+    width: 120px; 
+}
+.box2{ 
+    position: absolute;
+    top:50vh; 
+    left:36vw; 
+    background-color:white; 
+    height:100px; 
+    width: 400px; 
+} */
+
+/* swedish flag */
+
+/* body{ 
+    background-color:blue; 
+}
+
+.box1{ 
+    width:100px; 
+    height: 100vh;
+    background-color: yellow;
+    position: relative;
+    left: 25%
+}
+
+.box2{ 
+    width:100vw; 
+    height: 100px; 
+    position: absolute;
+    top: 50%; 
+    background-color:yellow; 
+} */
+
+/* flag of gambia */
+
+/* .box1{ 
+    background-color:red;
+    margin-bottom: 30px;
+    width: 100vw; 
+    height: 30vh;
+    position: relative;
+}
+
+.box2{ 
+    background-color:blue; 
+    width: 100vw; 
+    height: 20vh; 
+    margin-top:20px; 
+    margin-bottom:30px;
+    position: relative;
+}
+
+.box3{ 
+    background-color:green; 
+    width: 100vw; 
+    height: 30vh; 
+    margin-top:20px; 
+    margin-bottom:30px;
+    position: relative;
+}
+
+*/
+/* Tonga Flag */
+/* body{ 
+    background-color:red; 
+
+}
+.box1{ 
+    height:35vh; 
+    position: absolute;
+    width:35vw;
+    background-color:white; 
+    margin:0; 
+
+}
+
+.box2{ 
+    position: absolute;
+    height: 150px; 
+    width: 45px; 
+    background-color:red; 
+    left:230px;
+    top: 40px;
+}
+.box3{ 
+    position: absolute;
+    height: 45px; 
+    width: 150px; 
+    background-color:red; 
+    left:175px;
+    top: 85px;
+} */
+
+/* Japanese Flag */
+/* .box1{ 
+    position: relative;
+    background-color:red; 
+    border-radius: 50%; 
+    height:300px;
+    width:300px;
+    top:30vh; 
+    left:40%; 
+} */

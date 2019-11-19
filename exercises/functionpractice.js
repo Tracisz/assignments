@@ -50,6 +50,55 @@ function fibonacci(n){
 }
 console.log(fibonacci(8))
 
-function stringFrequency(string){ 
+// function stringFrequency(string){ 
 
+// }
+
+// function addUp(num) {
+// 	for(var i=0; i <= num; i++){ 
+      
+      
+//     }
+//     return rNum 
+// } 
+
+// console.log(addUp(10))
+
+// function countToTen( startingValue ){
+//     if(startingValue === 10){
+//         return "Yay, you did it"
+//     } else {
+//         console.log(startingValue)
+//         return countToTen( startingValue + 1)
+//     }
+// }
+
+// console.log(countToTen(3))
+
+// function addUp(num) {
+//     var a = 0,  f = 1
+//  for(i = 1; i <= num; i++){ 
+//      f = a + i 
+//      a = f 
+//   }
+//  return f
+// }   
+
+// console.log(addUp(13))
+
+// function hoursToSeconds(time){ 
+//     var minutes = time * 60
+//     var seconds = minutes * 60
+//     return seconds
+// } 
+
+// console.log(hoursToSeconds(4))
+
+function canNest(arr1, arr2) {
+    if (Math.min(arr1) > Math.min(arr2) && Math.max(arr1) < Math.max(arr2)){ 
+        return true
+    } else { 
+        return false
+    }
+	
 }

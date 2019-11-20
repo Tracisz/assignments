@@ -1,0 +1,35 @@
+* { 
+    margin: 0; 
+}
+
+html{ 
+    background-image: linear-gradient(pink)
+}
+
+.addition{ 
+    background-color:paleturquoise; 
+    margin-bottom: 10px; 
+    margin-left:4px; 
+    margin-top:4pt; 
+    border:black solid 3px; 
+    max-width: 20vw;
+
+}
+
+.subtraction{ 
+    background-color:lightcoral; 
+    margin-bottom: 10px; 
+    margin-left:4px; 
+    border:black solid 3px; 
+    max-width: 20vw;
+
+}
+
+.multiplication{ 
+    background-color:mintcream; 
+    margin-left:3px;
+    margin-bottom: 10px; 
+    border:black solid 3px; 
+    max-width: 20vw;
+
+}

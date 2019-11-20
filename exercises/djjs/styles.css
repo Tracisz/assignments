@@ -1,0 +1,10 @@
+.box{ 
+    position: relative;
+    top: 20vh; 
+    height:40pt; 
+    width:40pt; 
+    background-color:fuchsia; 
+    margin: 0pt; 
+    border: solid 3pt black;
+    display:inline-block; 
+}

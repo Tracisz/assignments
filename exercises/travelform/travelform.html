@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="travelform.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Travel Form</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Customer travel form</h1>
+    </div>
+    <form class="container" name="forms">
+        <div>
+            <h4>Please enter your name</h4>
+        </div>
+        <input 
+            class="input-form"
+            type="text"
+            name="firstname"
+            placeholder="First Name">
+            <br>
+        <input 
+            class="input-form"
+            type="text"
+            name="lastname"
+            placeholder="Last Name">
+            <br>
+        <div>
+            <h4>
+                Please enter your age
+            </h4>
+        </div>
+        <input 
+            class="input-form"
+            type="text"
+            name="age"
+            placeholder="Age">
+            <br>
+        <div>
+            <h4>Please select your gender</h4>
+        </div>
+        <input
+            type="radio"
+            name="gender"
+            id=""
+            value="male">
+            Male <br>
+        <input
+            type="radio"
+            name="gender"
+            value = "female"> 
+            Female <br>
+        <div>
+            <h4>
+                Please select your destination
+            </h4>
+        </div>
+        <div>
+            <select name="location">
+                <option value="0">Select a destination</option>
+                <option value="Las Vegas">Las Vegas</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="El Paso">El Paso</option>
+            </select>
+            <br>
+        <div>
+            <h4>
+                Please select any food restrictions
+            </h4>
+        </div>
+        <input
+            type="checkbox"
+            name="dietrestriction"
+            id=""
+            value="vegetarian">
+            Vegetarian
+         <br> 
+        <input
+            type="checkbox"
+            name="dietrestriction"
+            id=""
+            value="kosher">   
+            Kosher <br>
+        <input
+            type="checkbox"
+            name="dietrestriction"
+            id=""
+            value="vegan">    
+            Vegan <br>
+        </div>
+        <button id="submitBtn">Submit</button>
+    </form>
+
+    <script src="travelform.js"></script>
+</body>
+</html>

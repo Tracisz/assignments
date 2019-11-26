@@ -1,0 +1,103 @@
+@font-face{
+    font-family: mario;
+    src:url(images/SuperMario256.ttf)
+}
+*{ 
+    overflow-x:hidden; 
+    max-width: 100%;
+    margin:0; 
+}
+.title{ 
+    letter-spacing: 5px;
+    font-size:45px;
+    top:5%;
+    text-align: center;
+    font-family: mario;
+    color:#e4000f;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+a:hover{ 
+    cursor: pointer;
+}
+
+body{ 
+    background:url(https://mario.nintendo.com/assets/img/home/bg-play_2x.jpg); 
+    width:100%; 
+    height: 100%; 
+}
+.goomba{ 
+    font-family: 'mario'; 
+    color:#e4000f; 
+    position: relative;
+    left: 25pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.goomba h2{ 
+    text-decoration: underline;
+}
+
+.image{ 
+    max-width:200pt;
+    max-height:200pt;
+}
+
+.bob-ombs{ 
+    margin:5px;
+    font-family: 'mario'; 
+    color:#e4000f; 
+    position: relative;
+    left: 25pt;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.button{ 
+    margin: 5pt;
+    left:25pt; 
+    position: relative;
+}
+.total{ 
+    font-family: mario; 
+    font-size: 50pt; 
+    text-align: center;
+    color: #e4000f;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.footer{ 
+    border-top: solid 2px black; 
+    text-align: center;
+    opacity: 0.9;
+    min-height: 60px;
+    width:auto;
+    background-color: lightslategray;
+    margin:0; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}

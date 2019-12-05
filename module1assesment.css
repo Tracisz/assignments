@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows:repeat(2, 1fr) ;
+    height: 300pt; 
+    justify-items: center;
+    align-items: center;
+
+}
+.box {
+    width: 50%; 
+    height: 50%; 
+    background-color: blue
+    
+}
+
+.box2{ 
+    
+    align-self: flex-end; 
+    justify-self: flex-end;
+}
+
+/* 3 collums 2 rows */

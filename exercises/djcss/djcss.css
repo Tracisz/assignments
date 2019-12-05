@@ -1,0 +1,94 @@
+*{ 
+    margin: 0;
+   
+}
+.title{ 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: palevioletred;
+}
+
+.box1{ 
+    height:400px; 
+    width: 400px;
+    background-color: powderblue;
+    transition: background-color 400ms, transform 500ms ;
+    display: inline-block;
+    
+}
+
+.box1:hover{ 
+    background-color:yellowgreen;
+    transform: skew(45deg);
+}
+
+.box2{ 
+    height: 400px;
+    width:400px; 
+    background-color: thistle;
+    transition: background-color 400ms , opacity 3s;
+    display: inline-block;
+    
+}
+
+.box2:hover{ 
+    background-color: teal;
+    opacity: 0;
+}
+
+.box3{ 
+    height: 400px;
+    width:400px; 
+    background-color: paleturquoise;
+    transition: background-color 400ms, transform 2s, height 2s, width 2s;
+    display: inline-block;
+    
+}
+
+.box3:hover{ 
+    background-color: turquoise;
+    transform: rotate(360deg);
+    height: 500px; 
+    width: 500px; 
+}
+.box4{ 
+    height: 400px;
+    width:400px; 
+    background-color: fuchsia;
+    transition: background-color 400ms, border 1s;
+    display: inline-block;
+    
+}
+
+.box4:hover{ 
+    background-color: rebeccapurple;
+    border: solid 20px black
+}
+.box5{ 
+    height: 400px;
+    width:400px; 
+    background-color: blanchedalmond;
+    transition: background-color 400ms, height 1s, width 1s;
+    display: inline-block;
+    
+}
+
+.box5:hover{ 
+    background-color: orchid;
+    height: 600px; 
+    width: 200px; 
+}
+.box6{ 
+    height: 400px;
+    width:400px; 
+    background-color: gainsboro;
+    transition: background-color 400ms, width 1s, transform 1s;
+    display: inline-block;
+    
+}
+
+.box6:hover{ 
+    background-color: aquamarine;
+    width: 500px; 
+    transform: rotate(30deg);
+}

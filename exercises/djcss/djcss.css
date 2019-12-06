@@ -42,6 +42,7 @@
     background-color: paleturquoise;
     transition: background-color 400ms, transform 2s, height 2s, width 2s;
     display: inline-block;
+    border-radius: 25%;
     
 }
 

@@ -1,0 +1,57 @@
+{ 
+    "appetizers": [ { 
+            "name": "Chips and Salsa", 
+            "description": "House Chips and Salsa", 
+            "ingredients": "Tomatoes, peppers, and onions with house made chips"
+        }, 
+        { 
+            "name": "hummus",
+            "description": "Garlic Hummus with Pita Bread",
+            "ingredients": "Chickpeas, garlic, Pita Bread"
+        }],
+        
+        "cold sandwiches": [ { 
+            "name": "Ham and Cheese", 
+            "description": "Ham and cheese sandwhich", 
+            "ingredients": "Ham, cheese, mayo, bread"
+        }, 
+        { 
+            "name": "Veggie Wrap",
+            "description": "a medley of veggies with hummus wrapped in a tortilla",
+            "ingredients": "Hummus, carrots, lettuce, peppers, onions, tortilla, tomato"
+        }
+        ],
+
+        "hot sandwiches": [ { 
+            "name":"Cheese steak", 
+            "description": "thinkly sliced beef strips with provolone cheese",
+            "ingredients": "Beef, bread, provolone cheese"
+        }, 
+        { 
+            "name": "grilled cheese",
+            "description": "melted cheese between two toasted pieces of bread and butter",
+            "ingredients": "bread, butter, and cheese"
+        }],
+        "deserts": [{ 
+            "Name": "Ice cream", 
+            "description": "A frozen treat",
+            "ingredients": "milk, sugar, vanilla"
+        }, 
+        { 
+            "Name": "cake",
+            "description":"A great treat", 
+            "ingredients": "milk, sugar, vanilla, eggs, and flour"
+        }
+    ], 
+        "drinks": [{ 
+            "name":"Soda", 
+            "description": "A refreshing beverage",
+            "ingredients": "idk its soda man"
+        },
+        { 
+            "name": "water",
+            "description":"its water", 
+            "ingredients": "water"
+        }
+    ]
+}

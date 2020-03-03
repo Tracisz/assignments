@@ -1,0 +1,38 @@
+*
+{ 
+    margin: 0;
+}
+.items { 
+    border: 1px solid black;
+    margin: 10px; 
+    font-size: 20px;
+}
+
+.form{ 
+    margin: 10px; 
+}
+.title{ 
+    margin: 20px; 
+    font-size: 150px;
+}
+.text{ 
+    margin: 5px;
+}
+
+input{ 
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+button{ 
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.delete-btn { 
+    background-color: firebrick;
+    color: whitesmoke;
+}

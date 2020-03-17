@@ -1,0 +1,17 @@
+*{ 
+    margin: 0; 
+}
+
+.nav-buttons{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    background: lightblue;
+    height: 25pt;
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}

@@ -5,7 +5,8 @@ const jwt = require("jsonwebtoken")
 
 
 authRouter.post("/signup", (req, res, next) => { 
-    User.find({username: req.body.username.toLowerCase()}, (err, user) => { 
+    User.findOne({username: req.body.username.toLowerCase()}, (err, user) => { 
+        console.log("fired")
         if(err){ 
             res.status(500)
             return (next(err))
@@ -24,9 +25,10 @@ authRouter.post("/signup", (req, res, next) => {
             return res.status(201).send({token, user: savedUser.withoutPassword()})
         })
     })
+    console.log("firing")
 })
 authRouter.post("/login", (req, res, next) => { 
-    User.find({username: req.body.username.toLowerCase()}, (err, user) => { 
+    User.findOne({username: req.body.username.toLowerCase()}, (err, user) => { 
         if(err){ 
             res.status(500)
             return (next(err))
@@ -35,7 +37,7 @@ authRouter.post("/login", (req, res, next) => {
             res.status(500)
             return(next(new Error("Username or Password are incorrect")))
         }
-        User.checkPassword(req.body.password, (err, isMatch) => { 
+        user.isMatch(req.body.password, (err, isMatch) => { 
             if(err){ 
                 res.status(500)
                 return next(err)

@@ -19,6 +19,14 @@ const PostSchema = new Schema({
         type: Schema.Types.ObjectId, 
         ref: "User", 
         required: true
+    },
+    username: { 
+        type: String, 
+        required:true
+    }, 
+    comments: { 
+        type: Array, 
+        required: false, 
     }
 })
 

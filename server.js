@@ -26,7 +26,7 @@ app.use("/api/posts", require("./routes/postRouter.js"))
 //error handler 
 
 app.use((err, req, res, next) => {
-    console.log(err)
+    console.log(err.message)
     if(err.name === "UnauthorizedError"){
       res.status(err.status)
     }

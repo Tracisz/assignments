@@ -2,6 +2,10 @@ const express = require('express')
 const postsRouter = express.Router()
 const Posts = require("../model/Posts.js")
 
+// postsRouter.get("/users"), (req, res, next) => { 
+//     Posts.find({user: req.user._id})
+// }
+
 // gets all posts, route will probably need to be updated
 postsRouter.get("/posts", (req, res, next) => { 
     Posts.find((err, posts) => { 
@@ -24,7 +28,8 @@ postsRouter.get("/user", (req, res, next) => {
 
 // add a new post 
 postsRouter.post("/", (req, res, next) => { 
-    const newPost = new Posts 
+    req.body.user = req.user._id
+    const newPost = new Posts(req.body)
     newPost.save((err, savedPost) => { 
         if(err){ 
             res.status(500) 

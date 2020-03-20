@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt')
 
 
 
-const UserSchema = new Schema({ 
+const userSchema = new Schema({ 
     username: { 
         type: String, 
         required: true,
@@ -26,12 +26,12 @@ const UserSchema = new Schema({
 })
 
 // encrypts users passwords on signup 
-UserSchema.pre("save", function(next){ 
+userSchema.pre("save", function(next){ 
     const user = this
     if(!user.isModified("password")){ 
         return next()
     }
-    bcrypt.hash(password, 10, (err, hash) => { 
+    bcrypt.hash(user.password, 10, (err, hash) => { 
         if(err){ 
             return next(err)
         }
@@ -41,19 +41,17 @@ UserSchema.pre("save", function(next){
 })
 
 // checks that encrypted password on login
-UserSchema.methods.isMatch = function(passwordAttempt, callback){ 
-    bcrypt.compare(passwordAttempt, password, (err, isMatch) => { 
-        if(err){ 
-            return next(err)
-        } 
-        return callback(null, isMatch)
+userSchema.methods.isMatch = function(passwordAttempt, callback){
+    bcrypt.compare(passwordAttempt, this.password, (err, isMatch) => {
+      if(err) return callback(err)
+      return callback(null, isMatch)
     })
-}
+  }
 // removes user password from the token 
-UserSchema.methods.withoutPassword = function(){ 
+userSchema.methods.withoutPassword = function(){ 
     const user = this.toObject()
     delete user.password
     return user
 }
 
-module.exports = mongoose.model("User", UserSchema)
+module.exports = mongoose.model("User", userSchema)

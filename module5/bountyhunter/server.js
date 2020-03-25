@@ -56,7 +56,7 @@ app.post("/bounties", (req, res) => {
     res.send(`you have added ${newBounty.firstName} ${newBounty.lastName} to the data base`)
 })
 
-app.delete("/:bountyId", (req, res) => {
+app.delete("/bounties/:bountyId", (req, res) => {
     const bountyId = req.params.bountyId
     const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
     bounties.splice(bountyIndex, 1)

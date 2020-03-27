@@ -45,6 +45,7 @@ input{
 }
 
 button{ 
+    background-color: "red";
     margin: 5px;
     font-size: 15pt;
     height: 2rem;
@@ -86,4 +87,23 @@ p{
     height: auto;
     border: 1px solid black;
     border-radius: 3px;
+}
+
+.comments{ 
+    display: block;
+}
+
+h4{ 
+    margin: 10px;
+    font-size: 20pt;
+    border: 1px solid black;
+}
+
+textarea{ 
+    border-radius: 3px;
+    height: 100pt;  
+    max-width: 180pt;
+    min-width: 180pt;
+    max-height: 100pt;
+    min-height: 100pt;
 }

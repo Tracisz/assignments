@@ -1,9 +1,12 @@
-import React from "react"
+import React, { useContext } from "react"
 import Posts from "./Posts"
+import { UserContext } from "../context/UserContext"
 
 
 function Postlist(props){ 
-    const {posts} = props
+    // const {posts} = props
+    const { posts } = useContext(UserContext)
+    // console.log(posts)
     return (
     <div className = "profile"> 
         <h1>Your Posts</h1>

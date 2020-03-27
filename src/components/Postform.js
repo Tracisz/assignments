@@ -4,16 +4,19 @@ import React, { useState } from "react"
 
 function Postform(props){ 
     const user = JSON.parse(localStorage.getItem('user'))
+    const {addPost, toggle, handleEdit, post} = props
+   
 
     const initialInputs = { 
-        title: "", 
-        description: "",
+        title: post && post.title || "", 
+        description: post && post.description || "",
         username: user.username, 
         date: user.datePosted
     }
 
     
     const [inputs, setInputs] = useState(initialInputs)
+    
  
 
   function handleChange(e){
@@ -23,7 +26,6 @@ function Postform(props){
       [name]: value
     }))
   }
-  const {addPost, toggle, handleEdit, _id} = props
 
   function handleSubmit(e){ 
       e.preventDefault()
@@ -40,12 +42,12 @@ function Postform(props){
          <div className = "auth-form">
              {/* <h2>add new post!</h2> */}
              <input type = "text" placeholder = "title" value = {title} name = "title" onChange = {handleChange} ></input>
-             <input type = "text" placeholder = "description" value = {description} name = "description" onChange = {handleChange} ></input>
+             <textarea type = "text" placeholder = "description" value = {description} name = "description" onChange = {handleChange} ></textarea>
              {!toggle ? 
              <button onClick = {handleSubmit}>Submit</button>
              :
              <>
-             <button onClick = {() => handleEdit(_id, inputs)}>Submit edit</button>
+             <button onClick = {() => handleEdit(post._id, inputs)}>Submit edit</button>
              </>
             }
          </div>

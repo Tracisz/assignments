@@ -9,13 +9,17 @@ function Posts(props){
     const { deletePost, editPost } = useContext(UserContext)
     const [toggle, setToggle] = useState(false)
 
+    // useEffect(() => { 
+    //     console.log("fired")
+    // },[posts])
+
  
 
 
-  function handleEdit(_id, inputs){ 
-      editPost(_id, inputs)
-      console.log(_id ,inputs)
-  }
+  //function handleEdit(_id, inputs){ 
+   //   editPost(_id, inputs)
+    //   console.log(_id ,inputs)
+ // }
  
 
     return(
@@ -29,7 +33,7 @@ function Posts(props){
             <>
              {/* <input type = "text" placeholder = "title" value = {title} name = "title" onChange = {handleChange} ></input>
              <input type = "text" placeholder = "description" value = {description} name = "description" onChange = {handleChange} ></input> */}
-             <Postform handleEdit = {handleEdit} toggle = {toggle} _id = {_id}/>
+             <Postform handleEdit = {editPost} toggle = {toggle} post = {{title, description, _id}} />
              <button style = {{color: "red"}} onClick = {() => setToggle(prev => !prev)}>X</button>
              
             </>

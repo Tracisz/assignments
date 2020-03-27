@@ -9,7 +9,7 @@ const PostSchema = new Schema({
     }, 
     description:{ 
         type: String, 
-        required: true, 
+        required: false, 
     }, 
     datePosted: { 
         type: Date, 
@@ -24,10 +24,14 @@ const PostSchema = new Schema({
         type: String, 
         required:true
     }, 
-    comments: { 
-        type: Array, 
-        required: false, 
-    }
+    likes: {
+        type: Number, 
+        default: 0
+    }, 
+    liked: [
+        {type: Schema.Types.ObjectId, ref: "User"  } 
+        
+    ]
 })
 
 
